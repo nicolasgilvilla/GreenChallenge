@@ -15,5 +15,10 @@
 
     <!--Splash-->
     <string name="copyright">Copyright © 2022 – 2023. Made by Radiant.</string>
+    <string name="ic_information">ic_information</string>
+    <string name="daily_challenge">Reto Diario</string>
+    <string name="common_challenge">Retos comunes</string>
+    <string name="profile">Perfil</string>
+    <string name="achievements">Logros</string>
 
 </resources>

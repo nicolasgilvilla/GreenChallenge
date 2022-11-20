@@ -6,7 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.databinding.ActivitySplashBinding
-import com.app.greenchallenge.loginmodule.LoginActivity
+import com.app.greenchallenge.menumodule.MenuActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -37,7 +37,7 @@ class SplashActivity : AppCompatActivity() {
 
         GlobalScope.launch {
             delay(2800)
-            startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
+            startActivity(Intent(this@SplashActivity, MenuActivity::class.java))
             finish()
         }
     }
