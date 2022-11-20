@@ -14,25 +14,7 @@
         android:theme="@style/Theme.GreenChallenge"
         tools:targetApi="31">
         <activity
-            android:name=".AchievementsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CommonChallengeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DailyChallengeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LandingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".loginmodule.LoginActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,6 +22,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".menumodule.achievements.AchievementsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menumodule.commonchallenge.CommonChallengeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menumodule.dailychallenge.DailyChallengeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menumodule.profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menumodule.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".landingmodule.LandingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginmodule.LoginActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

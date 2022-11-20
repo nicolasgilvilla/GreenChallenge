@@ -13,4 +13,7 @@
     <string name="logo_google">logo_google</string>
     <string name="logo_facebook">logo_facebook</string>
 
+    <!--Splash-->
+    <string name="copyright">Copyright © 2022 – 2023. Made by Radiant.</string>
+
 </resources>
