@@ -6,7 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.databinding.ActivitySplashBinding
-import com.app.greenchallenge.menumodule.MenuActivity
+import com.app.greenchallenge.loginmodule.LoginActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -20,12 +20,11 @@ class SplashActivity : AppCompatActivity() {
         setContentView(mBinding.root)
 
         moveAnimationsToNextScreen(mBinding.tvFooter, mBinding.ivSiop)
-
     }
 
     private fun moveAnimationsToNextScreen(
         tvTittle: TextView,
-        ivIcon: ImageView,
+        ivIcon: ImageView
     ) {
         tvTittle.animate()
             .setStartDelay(2000)
@@ -37,7 +36,7 @@ class SplashActivity : AppCompatActivity() {
 
         GlobalScope.launch {
             delay(2800)
-            startActivity(Intent(this@SplashActivity, MenuActivity::class.java))
+            startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
             finish()
         }
     }
