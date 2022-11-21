@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         with(binding) {
             btnLogin.setOnClickListener {
-                if (name.text.toString() == "nicolas" && password.text.toString() == "123456") {
+                if (name.text.toString() == "nicolas" && password.text.toString() == "123") {
                     startActivity(Intent(this@LoginActivity, MenuActivity::class.java))
                 } else {
                     Toast.makeText(

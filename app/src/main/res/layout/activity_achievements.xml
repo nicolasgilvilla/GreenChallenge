@@ -21,13 +21,108 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/trophy"
+        android:id="@+id/trophy_bronce"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/trophy_cup"
-        app:layout_constraintStart_toStartOf=""
+        android:layout_marginTop="40dp"
+        android:src="@drawable/trophy_cup_bronce"
+        app:layout_constraintStart_toStartOf="@+id/title"
         app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOne"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:padding="5dp"
+        android:background="@drawable/background_border"
+        android:backgroundTint="#CD7F32"
+        android:text="23 playas limpias"
+        app:layout_constraintBottom_toBottomOf="@+id/trophy_bronce"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintTop_toTopOf="@+id/trophy_bronce" />
+
+    <ImageView
+        android:id="@+id/trophy_two"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/trophy_cup_plata"
+        app:layout_constraintStart_toStartOf="@+id/trophy_bronce"
+        app:layout_constraintTop_toBottomOf="@+id/trophy_bronce" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTwo"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:padding="5dp"
+        android:background="@drawable/background_border"
+        android:backgroundTint="#BEBEBE"
+        android:text="342 días usando tramsporte ecológico"
+        app:layout_constraintBottom_toBottomOf="@+id/trophy_two"
+        app:layout_constraintEnd_toEndOf="@+id/btnOne"
+        app:layout_constraintTop_toTopOf="@+id/trophy_two" />
+
+    <ImageView
+        android:id="@+id/trophy_gold"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/trophy_cup"
+        app:layout_constraintStart_toStartOf="@+id/trophy_two"
+        app:layout_constraintTop_toBottomOf="@+id/trophy_two" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnThree"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:padding="5dp"
+        android:background="@drawable/background_border"
+        android:backgroundTint="#FFD700"
+        android:text="400 árboles plantados"
+        app:layout_constraintBottom_toBottomOf="@+id/trophy_gold"
+        app:layout_constraintEnd_toEndOf="@+id/btnTwo"
+        app:layout_constraintTop_toTopOf="@+id/trophy_gold" />
+
+    <ImageView
+        android:id="@+id/trophy_four"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/trophy_cup_plata"
+        app:layout_constraintStart_toStartOf="@+id/trophy_gold"
+        app:layout_constraintTop_toBottomOf="@+id/trophy_gold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFour"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:padding="5dp"
+        android:background="@drawable/background_border"
+        android:backgroundTint="#BEBEBE"
+        android:text="86 horas sin aparatos electrónicos conectados en casa"
+        app:layout_constraintBottom_toBottomOf="@+id/trophy_four"
+        app:layout_constraintEnd_toEndOf="@+id/btnThree"
+        app:layout_constraintTop_toTopOf="@+id/trophy_four" />
+
+    <ImageView
+        android:id="@+id/trophy_five"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/trophy_cup_plata"
+        app:layout_constraintStart_toStartOf="@+id/trophy_four"
+        app:layout_constraintTop_toBottomOf="@+id/trophy_four" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFive"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:padding="5dp"
+        android:background="@drawable/background_border"
+        android:backgroundTint="#BEBEBE"
+        android:text="49kg de basura reciclada"
+        app:layout_constraintBottom_toBottomOf="@+id/trophy_five"
+        app:layout_constraintEnd_toEndOf="@+id/btnFour"
+        app:layout_constraintTop_toTopOf="@+id/trophy_five" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,26 +7,26 @@
     android:padding="10dp"
     tools:context=".menumodule.MenuActivity">
 
-    <ImageView
-        android:id="@+id/imageHead"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:contentDescription="@string/ic_information"
-        android:src="@drawable/ic_cambio_climatico"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/container_btn_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/container_btn_up"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container_btn_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@id/container_btn_down"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageHead"
-        app:layout_constraintBottom_toTopOf="@id/container_btn_down">
+        app:layout_constraintTop_toBottomOf="@id/recycler">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnDailyChallenge"
@@ -55,10 +55,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@id/imageFooter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/container_btn_up"
-        app:layout_constraintBottom_toTopOf="@id/imageFooter">
+        app:layout_constraintTop_toBottomOf="@id/container_btn_up">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnProfile"
@@ -89,9 +89,9 @@
         android:layout_marginTop="20dp"
         android:contentDescription="@string/ic_information"
         android:src="@drawable/ic_stadics"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/container_btn_down" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
