@@ -34,6 +34,7 @@
             android:layout_height="70dp"
             android:background="@drawable/bg_button_daily"
             android:text="@string/daily_challenge"
+            android:textAllCaps="false"
             app:layout_constraintEnd_toStartOf="@+id/btnCommonChallenge"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -44,6 +45,7 @@
             android:layout_height="70dp"
             android:background="@drawable/bg_button_common"
             android:text="@string/common_challenge"
+            android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btnDailyChallenge"
             app:layout_constraintTop_toTopOf="parent" />
@@ -66,6 +68,7 @@
             android:layout_height="70dp"
             android:background="@drawable/bg_button_profile"
             android:text="@string/profile"
+            android:textAllCaps="false"
             app:layout_constraintEnd_toStartOf="@+id/btnAchievements"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -76,6 +79,7 @@
             android:layout_height="70dp"
             android:background="@drawable/bg_button_achievements"
             android:text="@string/achievements"
+            android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btnProfile"
             app:layout_constraintTop_toTopOf="parent" />

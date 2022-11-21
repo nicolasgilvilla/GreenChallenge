@@ -8,6 +8,7 @@ import com.app.greenchallenge.R
 import com.app.greenchallenge.databinding.ActivityMenuBinding
 import com.app.greenchallenge.menumodule.achievements.AchievementsActivity
 import com.app.greenchallenge.menumodule.adapter.CustomAdapter
+import com.app.greenchallenge.menumodule.dailychallenge.DailyChallengeActivity
 
 class MenuActivity : AppCompatActivity() {
 
@@ -18,12 +19,12 @@ class MenuActivity : AppCompatActivity() {
         binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
         with(binding) {
-            var imageList: Array<Int> = arrayOf(
+            val imageList: Array<Int> = arrayOf(
                 R.drawable.ic_cambio_climatico,
                 R.drawable.ic_splash
             )
 
-            var arrayAdapter = CustomAdapter(imageList)
+            val arrayAdapter = CustomAdapter(imageList)
 
             recycler.adapter = arrayAdapter
             val linear =
@@ -33,6 +34,9 @@ class MenuActivity : AppCompatActivity() {
 
             btnAchievements.setOnClickListener {
                 startActivity(Intent(this@MenuActivity, AchievementsActivity::class.java))
+            }
+            btnDailyChallenge.setOnClickListener {
+                startActivity(Intent(this@MenuActivity, DailyChallengeActivity::class.java))
             }
         }
     }

@@ -16,9 +16,20 @@
     <!--Splash-->
     <string name="copyright">Copyright © 2022 – 2023. Made by Radiant.</string>
     <string name="ic_information">ic_information</string>
-    <string name="daily_challenge">Reto Diario</string>
+    <string name="daily_challenge">Reto diario</string>
     <string name="common_challenge">Retos comunes</string>
     <string name="profile">Perfil</string>
     <string name="achievements">Logros</string>
+
+    <!--Daily-->
+    <string name="text_challenge">ECOMOVIL:\nDurante todo tu día usa un método de transporte ecológico o en su defecto usa el transporte público.</string>
+    <string name="text_why">¿Por qué hacerlo?\n\nEl uso masivo del vehículo privado colapsa las ciudades y las hace más sucias y más ruidosas.</string>
+    <string name="text_effects">Si al menos 5000 personas completan este reto, existen varios beneficios que se lograrían alcanzar a corto y largo plazo.</string>
+    <string name="text_btn_effects">Oprime acá para conocerlos.</string>
+    <string name="view_more"><i>Ver más</i></string>
+    <string name="text_accepted_challenge">Cantidad de personas que se han unido a este reto:</string>
+    <string name="text_number_person">3523</string>
+    <string name="text_question">¿Aceptas el reto?</string>
+    <string name="text_left">Abandonar reto.</string>
 
 </resources>
