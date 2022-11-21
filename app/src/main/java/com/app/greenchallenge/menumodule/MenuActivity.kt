@@ -20,8 +20,10 @@ class MenuActivity : AppCompatActivity() {
         setContentView(binding.root)
         with(binding) {
             val imageList: Array<Int> = arrayOf(
+                R.drawable.ic_carrusel_1,
+                R.drawable.ic_carrusel_2,
+                R.drawable.ic_carrusel_3,
                 R.drawable.ic_cambio_climatico,
-                R.drawable.ic_splash
             )
 
             val arrayAdapter = CustomAdapter(imageList)

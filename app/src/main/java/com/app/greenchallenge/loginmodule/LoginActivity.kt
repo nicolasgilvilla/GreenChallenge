@@ -19,6 +19,7 @@ class LoginActivity : AppCompatActivity() {
             btnLogin.setOnClickListener {
                 if (name.text.toString() == "nicolas" && password.text.toString() == "123") {
                     startActivity(Intent(this@LoginActivity, MenuActivity::class.java))
+                    this@LoginActivity.finish()
                 } else {
                     Toast.makeText(
                         this@LoginActivity,
