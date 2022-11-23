@@ -32,4 +32,14 @@
     <string name="text_question">¿Aceptas el reto?</string>
     <string name="text_left">Abandonar reto.</string>
 
+    <!--OnBoarding-->
+    <string name="on_boarding_text_swipe">Swipe</string>
+    <string name="on_boarding_title_welcome">Bienvenido a GreenChallenge!</string>
+    <string name="on_boarding_description_welcome">Una app que te ayuda a contribuir con el medio ambiente.</string>
+    <string name="on_boarding_title_pokedex">Fácil de usar, fácil de aprender</string>
+    <string name="on_boarding_description_pokedex">Una forma fácil de contribuir contra el cambio climático.</string>
+    <string name="on_boarding_title_the_best">¿Listo para comenzar?</string>
+    <string name="on_boarding_description_the_best">¡Comencemos!</string>
+    <string name="on_boarding_finish_button_text">Vamos</string>
+
 </resources>

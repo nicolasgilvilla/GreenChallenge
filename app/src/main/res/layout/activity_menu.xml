@@ -9,7 +9,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="200dp"
         android:contentDescription="@string/ic_information"
         android:orientation="horizontal"
@@ -97,5 +97,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/container_btn_down" />
+
+    <ImageView
+        android:id="@+id/arrowForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:src="@drawable/ic_arrow_forward"
+        app:layout_constraintBottom_toBottomOf="@id/recycler"
+        app:layout_constraintStart_toEndOf="@id/recycler"
+        app:layout_constraintTop_toTopOf="@id/recycler" />
+
+    <ImageView
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@id/recycler"
+        app:layout_constraintEnd_toStartOf="@id/recycler"
+        app:layout_constraintTop_toTopOf="@id/recycler" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

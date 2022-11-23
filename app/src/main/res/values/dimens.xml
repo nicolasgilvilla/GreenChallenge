@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Common-->
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="common_padding_middle">24dp</dimen>
+    <dimen name="common_padding_big">32dp</dimen>
+    <dimen name="common_padding_extra">48dp</dimen>
+
+    <!--OnBoarding-->
+    <dimen name="on_boarding_tab_max_width">30dp</dimen>
+    <dimen name="on_boarding_tab_dots_padding">15dp</dimen>
+    <dimen name="on_boarding_tab_margin_bottom">28dp</dimen>
+    <dimen name="on_boarding_finish_button_height">37dp</dimen>
+
+    <!--Home-->
+    <dimen name="home_viewpager_height">220dp</dimen>
+    <dimen name="home_item_card_height">200dp</dimen>
+    <dimen name="home_tab_layout_start_and_end_padding">25dp</dimen>
+    <dimen name="home_tab_layout_max_width">50dp</dimen>
+</resources>
