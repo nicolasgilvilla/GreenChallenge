@@ -19,7 +19,9 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         with(binding) {
             btnLogin.setOnClickListener {
-                if (email.text.toString() == "jasantiagos@ufpso.edu.co" || email.text.toString().isEmpty() || password.text.toString().isEmpty()) {
+                if (email.text.toString() == "jasantiagos@ufpso.edu.co" || email.text.toString()
+                        .isEmpty() || password.text.toString().isEmpty()
+                ) {
                     Toast.makeText(
                         this@LoginActivity,
                         "Datos incorrectos, verifique la informacion por favor.",
@@ -42,6 +44,22 @@ class LoginActivity : AppCompatActivity() {
                 GenerateDialogGeneric.showDialogGeneric(
                     this@LoginActivity,
                     "", R.string.register.toString(), null
+                )
+            }
+            btnGoogle.setOnClickListener {
+                GenerateDialogGeneric.showDialogGeneric(
+                    this@LoginActivity,
+                    this@LoginActivity.getString(R.string.no_implement),
+                    R.string.no_implement.toString(),
+                    null
+                )
+            }
+            btnFacebook.setOnClickListener {
+                GenerateDialogGeneric.showDialogGeneric(
+                    this@LoginActivity,
+                    this@LoginActivity.getString(R.string.no_implement),
+                    R.string.no_implement.toString(),
+                    null
                 )
             }
         }

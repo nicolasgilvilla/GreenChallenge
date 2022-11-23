@@ -54,5 +54,7 @@
     <string name="text_button_continue">Continuar</string>
     <string name="text_email">Correo</string>
     <string name="title_dialog_unknown">¡OPPS!\nAlgo extraño ocurrió, inténtalo de nuevo</string>
+    <string name="no_implement">De momento esta funcionalidad no está implementada.\nEstamos trabajando en ello.\nTe invitamos a seguir interactuando con la aplicación e inténtarlo más tarde.</string>
+    <string name="title_dialog_no_implement">"¡Lo sentimos! "</string>
 
 </resources>

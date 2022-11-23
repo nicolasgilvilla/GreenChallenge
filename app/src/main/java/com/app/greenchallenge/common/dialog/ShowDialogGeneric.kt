@@ -59,6 +59,15 @@ object ShowDialogGeneric {
                         tilEmail.visibility = GONE
                         textButton = context.getString(R.string.text_button_continue)
                     }
+                    R.string.no_implement.toString() ->{
+                        title = context.getString(R.string.title_dialog_no_implement)
+                        textViewTextInfo.visibility = VISIBLE
+                        textInfo = data.message
+                        tilUser.visibility = GONE
+                        tilPassword.visibility = GONE
+                        tilEmail.visibility = GONE
+                        textButton = context.getString(R.string.text_button_continue)
+                    }
                     else -> {
                         title = context.getString(R.string.title_dialog_unknown)
                         textViewTextInfo.visibility = GONE
