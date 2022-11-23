@@ -23,9 +23,10 @@
 
     <!--Daily-->
     <string name="text_challenge">ECOMOVIL:\nDurante todo tu día usa un método de transporte ecológico o en su defecto usa el transporte público.</string>
-    <string name="text_why">¿Por qué hacerlo?\n\nEl uso masivo del vehículo privado colapsa las ciudades y las hace más sucias y más ruidosas.</string>
-    <string name="text_effects">Si al menos 5000 personas completan este reto, existen varios beneficios que se lograrían alcanzar a corto y largo plazo.</string>
-    <string name="text_btn_effects">Oprime acá para conocerlos.</string>
+    <string name="text_why">¿Por qué hacerlo?</string>
+    <string name="text_info_why">El uso masivo del vehículo privado colapsa las ciudades y las hace más sucias y más ruidosas.</string>
+    <string name="text_benefits">Si al menos 5000 personas completan este reto, existen varios beneficios que se lograrían alcanzar a corto y largo plazo.</string>
+    <string name="text_btn_benefits">Oprime acá para conocerlos.</string>
     <string name="view_more"><i>Ver más</i></string>
     <string name="text_accepted_challenge">Cantidad de personas que se han unido a este reto:</string>
     <string name="text_number_person">3523</string>
@@ -41,5 +42,17 @@
     <string name="on_boarding_title_the_best">¿Listo para comenzar?</string>
     <string name="on_boarding_description_the_best">¡Comencemos!</string>
     <string name="on_boarding_finish_button_text">Vamos</string>
+
+    <!--Dialog-->
+    <string name="any_imagenview">Imagen generica</string>
+    <string name="title_dialog_forgot">Ingresa tu correo para reestablecer la contraseña</string>
+    <string name="text_button_send">Enviar</string>
+    <string name="title_dialog_register">Ingresa tus datos para registrarte</string>
+    <string name="text_button_register">Registrar</string>
+    <string name="title_dialog_benefits">Estos son algunos beneficios</string>
+    <string name="title_dialog_why">Estas son algunas consecuencias</string>
+    <string name="text_button_continue">Continuar</string>
+    <string name="text_email">Correo</string>
+    <string name="title_dialog_unknown">¡OPPS!\nAlgo extraño ocurrió, inténtalo de nuevo</string>
 
 </resources>

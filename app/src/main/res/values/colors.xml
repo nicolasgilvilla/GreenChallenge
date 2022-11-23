@@ -15,5 +15,6 @@
     <color name="pink">#ff99ff</color>
     <color name="pink_light">#ffccff</color>ffccff
     <color name="red">#FF0000</color>ffccff
+    <color name="color_text_disable_button">#80231F20</color>
 
 </resources>

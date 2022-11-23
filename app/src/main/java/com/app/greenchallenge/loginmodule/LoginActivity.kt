@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.app.greenchallenge.R
+import com.app.greenchallenge.common.dialog.GenerateDialogGeneric
 import com.app.greenchallenge.databinding.ActivityLoginBinding
 import com.app.greenchallenge.menumodule.MenuActivity
 
@@ -17,17 +19,33 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         with(binding) {
             btnLogin.setOnClickListener {
-                if (name.text.toString() == "nicolas" && password.text.toString() == "123") {
-                    startActivity(Intent(this@LoginActivity, MenuActivity::class.java))
-                    this@LoginActivity.finish()
-                } else {
+                if (email.text.toString() == "jasantiagos@ufpso.edu.co" || email.text.toString().isEmpty() || password.text.toString().isEmpty()) {
                     Toast.makeText(
                         this@LoginActivity,
                         "Datos incorrectos, verifique la informacion por favor.",
                         Toast.LENGTH_LONG
                     ).show()
+                } else {
+                    startActivity(Intent(this@LoginActivity, MenuActivity::class.java))
+                    this@LoginActivity.finish()
                 }
+            }
+            textForgotPassword.setOnClickListener {
+                GenerateDialogGeneric.showDialogGeneric(
+                    this@LoginActivity,
+                    "",
+                    R.string.forgot_password.toString(),
+                    null
+                )
+            }
+            textRegister.setOnClickListener {
+                GenerateDialogGeneric.showDialogGeneric(
+                    this@LoginActivity,
+                    "", R.string.register.toString(), null
+                )
             }
         }
     }
+
+
 }

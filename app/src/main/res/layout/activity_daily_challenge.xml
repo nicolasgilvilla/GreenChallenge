@@ -62,17 +62,33 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnWhy"
-                android:layout_width="170dp"
-                android:layout_height="200dp"
+            <TextView
+                android:id="@+id/textTitleWhy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@drawable/background_border"
                 android:clickable="false"
                 android:text="@string/text_why"
                 android:textAllCaps="false"
                 android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnWhy"
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:background="@drawable/background_border"
+                android:clickable="false"
+                android:text="@string/text_info_why"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textTitleWhy" />
 
             <TextView
                 android:id="@+id/textViewMore"
@@ -94,21 +110,21 @@
             android:layout_height="160dp"
             android:background="@drawable/background_border"
             android:clickable="false"
-            android:text="@string/text_effects"
+            android:text="@string/text_benefits"
             android:textAllCaps="false"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/btnEffects"
+            app:layout_constraintBottom_toTopOf="@+id/btnBenefits"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnEffects"
+            android:id="@+id/btnBenefits"
             android:layout_width="170dp"
             android:layout_height="60dp"
             android:background="@drawable/background_border"
             android:backgroundTint="@color/purple_light"
             android:clickable="false"
-            android:text="@string/text_btn_effects"
+            android:text="@string/text_btn_benefits"
             android:textAllCaps="false"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
