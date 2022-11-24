@@ -8,6 +8,7 @@ import com.app.greenchallenge.R
 import com.app.greenchallenge.databinding.ActivityMenuBinding
 import com.app.greenchallenge.menumodule.achievements.AchievementsActivity
 import com.app.greenchallenge.menumodule.adapter.CustomAdapter
+import com.app.greenchallenge.menumodule.commonchallenge.CommonChallengeActivity
 import com.app.greenchallenge.menumodule.dailychallenge.DailyChallengeActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -38,6 +39,9 @@ class MenuActivity : AppCompatActivity() {
             }
             btnDailyChallenge.setOnClickListener {
                 startActivity(Intent(this@MenuActivity, DailyChallengeActivity::class.java))
+            }
+            btnCommonChallenge.setOnClickListener {
+                startActivity(Intent(this@MenuActivity, CommonChallengeActivity::class.java))
             }
         }
     }

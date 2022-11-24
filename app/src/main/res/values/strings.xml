@@ -57,4 +57,13 @@
     <string name="no_implement">De momento esta funcionalidad no está implementada.\nEstamos trabajando en ello.\nTe invitamos a seguir interactuando con la aplicación e inténtarlo más tarde.</string>
     <string name="title_dialog_no_implement">"¡Lo sentimos! "</string>
 
+
+    <!--Common Challenge-->
+    <string name="common_challenge_text_title_example">Todo por separado</string>
+    <string name="common_challenge_text_action_example">Separa toda tu basura por una o más semanas.</string>
+    <string name="common_challenge_text_effect_example">Además de la contaminación del aire, la tierra y el agua; la mala gestión de los residuos tiene efectos perjudiciales para la salud pública.</string>
+    <string name="common_challenge_text_benefits_example">Reducción de desechos que contaminan el ambiente.\nConservación de los recursos naturales.</string>
+    <string name="common_challenge_text_benefits_example_2">Ahorro de agua, energía y dinero.\nObtener nuevos productos a partir de otros ya usados.</string>
+    <string name="common_challenge_number_benefits_example">7523</string>
+
 </resources>

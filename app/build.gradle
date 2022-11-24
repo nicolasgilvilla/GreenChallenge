@@ -52,9 +52,16 @@ dependencies {
     //Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
 
+    //LiveData
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
 
 
     //Lottie
     implementation "com.airbnb.android:lottie:3.4.2"
+
+    //Recycler
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+
+    //CardView
+    implementation "androidx.cardview:cardview:1.0.0"
 }
