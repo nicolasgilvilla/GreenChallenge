@@ -17,13 +17,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:text="@string/common_challenge_text_title_example"
+            android:text="CHIPALOS"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
             android:id="@+id/infoChallenge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:layout_below="@id/titleChallenge"
             android:text="@string/common_challenge_text_effect_example"
             android:textAppearance="?android:attr/textAppearanceSmall" />

@@ -24,17 +24,23 @@ class CommonChallengeActivity : AppCompatActivity(), CommonOnClickListener {
                 benefits = getString(R.string.common_challenge_text_benefits_example)
             ),
             ModelCommon(
-                title = getString(R.string.common_challenge_text_title_example),
-                action = getString(R.string.common_challenge_text_action_example),
-                effects = getString(R.string.common_challenge_text_effect_example),
-                benefits = getString(R.string.common_challenge_text_benefits_example)
+                title = getString(R.string.model1),
+                action = getString(R.string.model2),
+                effects = getString(R.string.model3),
+                benefits = getString(R.string.model4)
             ),
             ModelCommon(
-                title = getString(R.string.common_challenge_text_title_example),
-                action = getString(R.string.common_challenge_text_action_example),
-                effects = getString(R.string.common_challenge_text_effect_example),
-                benefits = getString(R.string.common_challenge_text_benefits_example)
-            )
+                title = getString(R.string.model5),
+                action = getString(R.string.model6),
+                effects = getString(R.string.model7),
+                benefits = getString(R.string.model8)
+            ),
+            ModelCommon(
+                title = getString(R.string.model9),
+                action = getString(R.string.mode10),
+                effects = getString(R.string.model12),
+                benefits = getString(R.string.model11)
+            ),
         )
 
         setupAdapter(commonList)

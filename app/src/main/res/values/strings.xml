@@ -65,5 +65,17 @@
     <string name="common_challenge_text_benefits_example">Reducción de desechos que contaminan el ambiente.\nConservación de los recursos naturales.</string>
     <string name="common_challenge_text_benefits_example_2">Ahorro de agua, energía y dinero.\nObtener nuevos productos a partir de otros ya usados.</string>
     <string name="common_challenge_number_benefits_example">7523</string>
+    <string name="model1">Ni una gota más</string>
+    <string name="model2">Ahorra agua y cierra los grifos</string>
+    <string name="model3">Para 2030 estaremos sin agua si no se logra contener el daño que esta causando</string>
+    <string name="model4">El ahorro de agua puede llegar a ser de 3500L al mes, garantizar la disponibilidad y la gestion sostenible del agua</string>
+    <string name="model5">Una hora no cuesta tanto</string>
+    <string name="model6">"Apaga o desconecta todos tus dispositivos electrónicos por una hora. "</string>
+    <string name="model7">"Conllenva a la emisión a la atmmósfera de importantes cantidades de gases de efecto invernadero. "</string>
+    <string name="model8">"Prolonga la vida útil de tus dispositivos, además ayuda a preservar los insumos naturales. "</string>
+    <string name="model9">¡A caminar!</string>
+    <string name="mode10">Usa un medio de transporte ecológico, comparte el transporte publico</string>
+    <string name="model11">Podemos reducir las emisiones de CO2 en el planeta tierra</string>
+    <string name="model12">El transporte a base de gasolina es uno de los mayores emisores de CO2 en el planeta tierra</string>
 
 </resources>
