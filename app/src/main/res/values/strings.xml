@@ -1,3 +1,81 @@
 <resources>
     <string name="app_name">GreenChallenge</string>
+
+    <!--Login-->
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="no_account">¿Aún no tienes una cuenta?</string>
+    <string name="register">Registrate</string>
+    <string name="login_with">También puedes iniciar sesión con:</string>
+    <string name="two">2</string>
+    <string name="logo_google">logo_google</string>
+    <string name="logo_facebook">logo_facebook</string>
+
+    <!--Splash-->
+    <string name="copyright">Copyright © 2022 – 2023. Made by Radiant.</string>
+    <string name="ic_information">ic_information</string>
+    <string name="daily_challenge">Reto diario</string>
+    <string name="common_challenge">Retos comunes</string>
+    <string name="profile">Perfil</string>
+    <string name="achievements">Logros</string>
+
+    <!--Daily-->
+    <string name="text_challenge">ECOMOVIL:\nDurante todo tu día usa un método de transporte ecológico o en su defecto usa el transporte público.</string>
+    <string name="text_why">¿Por qué hacerlo?</string>
+    <string name="text_info_why">El uso masivo del vehículo privado colapsa las ciudades y las hace más sucias y más ruidosas.</string>
+    <string name="text_benefits">Si al menos 5000 personas completan este reto, existen varios beneficios que se lograrían alcanzar a corto y largo plazo.</string>
+    <string name="text_btn_benefits">Oprime acá para conocerlos.</string>
+    <string name="view_more"><i>Ver más</i></string>
+    <string name="text_accepted_challenge">Cantidad de personas que se han unido a este reto:</string>
+    <string name="text_number_person">3523</string>
+    <string name="text_question">¿Aceptas el reto?</string>
+    <string name="text_left">Abandonar reto.</string>
+
+    <!--OnBoarding-->
+    <string name="on_boarding_text_swipe">Swipe</string>
+    <string name="on_boarding_title_welcome">Bienvenido a GreenChallenge!</string>
+    <string name="on_boarding_description_welcome">Una app que te ayuda a contribuir con el medio ambiente.</string>
+    <string name="on_boarding_title_pokedex">Fácil de usar, fácil de aprender</string>
+    <string name="on_boarding_description_pokedex">Una forma fácil de contribuir contra el cambio climático.</string>
+    <string name="on_boarding_title_the_best">¿Listo para comenzar?</string>
+    <string name="on_boarding_description_the_best">¡Comencemos!</string>
+    <string name="on_boarding_finish_button_text">Vamos</string>
+
+    <!--Dialog-->
+    <string name="any_imagenview">Imagen generica</string>
+    <string name="title_dialog_forgot">Ingresa tu correo para reestablecer la contraseña</string>
+    <string name="text_button_send">Enviar</string>
+    <string name="title_dialog_register">Ingresa tus datos para registrarte</string>
+    <string name="text_button_register">Registrar</string>
+    <string name="title_dialog_benefits">Estos son algunos beneficios</string>
+    <string name="title_dialog_why">Estas son algunas consecuencias</string>
+    <string name="text_button_continue">Continuar</string>
+    <string name="text_email">Correo</string>
+    <string name="title_dialog_unknown">¡OPPS!\nAlgo extraño ocurrió, inténtalo de nuevo</string>
+    <string name="no_implement">De momento esta funcionalidad no está implementada.\nEstamos trabajando en ello.\nTe invitamos a seguir interactuando con la aplicación e inténtarlo más tarde.</string>
+    <string name="title_dialog_no_implement">"¡Lo sentimos! "</string>
+
+
+    <!--Common Challenge-->
+    <string name="common_challenge_text_title_example">Todo por separado</string>
+    <string name="common_challenge_text_action_example">Separa toda tu basura por una o más semanas.</string>
+    <string name="common_challenge_text_effect_example">Además de la contaminación del aire, la tierra y el agua; la mala gestión de los residuos tiene efectos perjudiciales para la salud pública.</string>
+    <string name="common_challenge_text_benefits_example">Reducción de desechos que contaminan el ambiente.\nConservación de los recursos naturales.</string>
+    <string name="common_challenge_text_benefits_example_2">Ahorro de agua, energía y dinero.\nObtener nuevos productos a partir de otros ya usados.</string>
+    <string name="common_challenge_number_benefits_example">7523</string>
+    <string name="model1">Ni una gota más</string>
+    <string name="model2">Ahorra agua y cierra los grifos</string>
+    <string name="model3">Para 2030 estaremos sin agua si no se logra contener el daño que esta causando</string>
+    <string name="model4">El ahorro de agua puede llegar a ser de 3500L al mes, garantizar la disponibilidad y la gestion sostenible del agua</string>
+    <string name="model5">Una hora no cuesta tanto</string>
+    <string name="model6">"Apaga o desconecta todos tus dispositivos electrónicos por una hora. "</string>
+    <string name="model7">"Conllenva a la emisión a la atmmósfera de importantes cantidades de gases de efecto invernadero. "</string>
+    <string name="model8">"Prolonga la vida útil de tus dispositivos, además ayuda a preservar los insumos naturales. "</string>
+    <string name="model9">¡A caminar!</string>
+    <string name="mode10">Usa un medio de transporte ecológico, comparte el transporte publico</string>
+    <string name="model11">Podemos reducir las emisiones de CO2 en el planeta tierra</string>
+    <string name="model12">El transporte a base de gasolina es uno de los mayores emisores de CO2 en el planeta tierra</string>
+
 </resources>

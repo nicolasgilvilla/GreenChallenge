@@ -14,7 +14,31 @@
         android:theme="@style/Theme.GreenChallenge"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".PaymentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TreeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".menumodule.commonchallenge.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewpagermodule.ViewPagerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +46,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".menumodule.achievements.AchievementsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menumodule.commonchallenge.CommonChallengeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menumodule.dailychallenge.DailyChallengeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menumodule.profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menumodule.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".landingmodule.LandingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginmodule.LoginActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
