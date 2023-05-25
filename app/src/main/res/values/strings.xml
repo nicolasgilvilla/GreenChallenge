@@ -17,9 +17,9 @@
     <string name="copyright">Copyright © 2022 – 2023. Made by Radiant.</string>
     <string name="ic_information">ic_information</string>
     <string name="daily_challenge">Reto diario</string>
-    <string name="common_challenge">Retos comunes</string>
-    <string name="profile">Perfil</string>
-    <string name="achievements">Logros</string>
+    <string name="common_challenge">Comunes</string>
+    <string name="news">Noticias</string>
+    <string name="achievements">Estadísticas</string>
 
     <!--Daily-->
     <string name="text_challenge">ECOMOVIL:\nDurante todo tu día usa un método de transporte ecológico o en su defecto usa el transporte público.</string>
@@ -77,5 +77,7 @@
     <string name="mode10">Usa un medio de transporte ecológico, comparte el transporte publico</string>
     <string name="model11">Podemos reducir las emisiones de CO2 en el planeta tierra</string>
     <string name="model12">El transporte a base de gasolina es uno de los mayores emisores de CO2 en el planeta tierra</string>
+    <string name="text_menu">Menú</string>
+    <string name="title_app">GreenChallenge</string>
 
 </resources>

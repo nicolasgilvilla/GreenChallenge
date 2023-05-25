@@ -1,8 +1,8 @@
 package com.app.greenchallenge.viewpagermodule
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.R
 import com.app.greenchallenge.databinding.ActivityViewPagerBinding
 import com.app.greenchallenge.loginmodule.LoginActivity

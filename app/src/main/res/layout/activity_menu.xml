@@ -4,118 +4,236 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     tools:context=".menumodule.MenuActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler"
-        android:layout_width="330dp"
-        android:layout_height="200dp"
-        android:contentDescription="@string/ic_information"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/container_btn_up"
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/top_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view7"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/container_btn_up"
-        android:layout_width="match_parent"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toTopOf="@id/container_btn_down"
+        android:layout_margin="22dp"
+        android:text="@string/text_menu"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view6"
+        app:layout_constraintStart_toStartOf="@+id/view6"
+        app:layout_constraintTop_toTopOf="@+id/view6" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/recycler">
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnDailyChallenge"
-            android:layout_width="170dp"
-            android:layout_height="70dp"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_user_basic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnDailyChallenge"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="8dp"
+        app:cardMaxElevation="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCommonChallenge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:background="@drawable/bg_button_daily"
-            android:text="@string/daily_challenge"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toStartOf="@+id/btnCommonChallenge"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnCommonChallenge"
-            android:layout_width="170dp"
-            android:layout_height="70dp"
+            <ImageView
+                android:id="@+id/image_view_ico_one"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/ic_daily" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textDailyChallenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="9dp"
+                android:gravity="center"
+                android:text="@string/daily_challenge"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnCommonChallenge"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="8dp"
+        app:cardMaxElevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnDailyChallenge"
+        app:layout_constraintTop_toBottomOf="@id/logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:background="@drawable/bg_button_common"
-            android:text="@string/common_challenge"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/btnDailyChallenge"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:gravity="center"
+            android:orientation="vertical">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/image_view_ico_two"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/ic_common" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/container_btn_down"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toTopOf="@id/imageFooter"
-        app:layout_constraintEnd_toEndOf="parent"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textCommonChallenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="9dp"
+                android:gravity="center"
+                android:text="@string/common_challenge"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnNews"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="8dp"
+        app:cardMaxElevation="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAchievements"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/container_btn_up">
+        app:layout_constraintTop_toBottomOf="@+id/btnDailyChallenge">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnProfile"
-            android:layout_width="170dp"
-            android:layout_height="70dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:background="@drawable/bg_button_profile"
-            android:text="@string/profile"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toStartOf="@+id/btnAchievements"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnAchievements"
-            android:layout_width="170dp"
-            android:layout_height="70dp"
-            android:background="@drawable/bg_button_achievements"
-            android:text="@string/achievements"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/btnProfile"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/image_view_ico_three"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/ic_news" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="9dp"
+                android:gravity="center"
+                android:text="@string/news"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageFooter"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/ic_information"
-        android:src="@drawable/ic_stadics"
-        app:layout_constraintBottom_toBottomOf="parent"
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnAchievements"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="8dp"
+        app:cardMaxElevation="3dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/container_btn_down" />
+        app:layout_constraintStart_toEndOf="@id/btnNews"
+        app:layout_constraintTop_toBottomOf="@+id/btnCommonChallenge">
 
-    <ImageView
-        android:id="@+id/arrowForward"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:src="@drawable/ic_arrow_forward"
-        app:layout_constraintBottom_toBottomOf="@id/recycler"
-        app:layout_constraintStart_toEndOf="@id/recycler"
-        app:layout_constraintTop_toTopOf="@id/recycler" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button_achievements"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/arrowBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:src="@drawable/ic_arrow_back"
-        app:layout_constraintBottom_toBottomOf="@id/recycler"
-        app:layout_constraintEnd_toStartOf="@id/recycler"
-        app:layout_constraintTop_toTopOf="@id/recycler" />
+            <ImageView
+                android:id="@+id/image_view_ico_four"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/ic_statistics" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textAchievements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="9dp"
+                android:gravity="center"
+                android:text="@string/achievements"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

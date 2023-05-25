@@ -11,14 +11,14 @@
         android:id="@+id/tvTittle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GreenChallenge"
         android:layout_marginTop="80dp"
-        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/common_padding_min"
+        android:text="@string/title_app"
         android:textAppearance="?attr/textAppearanceHeadline4"
-        app:layout_constraintTop_toTopOf="@id/lottie"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/lottie"
         app:layout_constraintStart_toStartOf="@id/lottie"
-        android:layout_marginBottom="@dimen/common_padding_min"/>
+        app:layout_constraintTop_toTopOf="@id/lottie" />
 
     <TextView
         android:id="@+id/tvFooter"
@@ -36,14 +36,14 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:lottie_rawRes="@raw/splash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/splash" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

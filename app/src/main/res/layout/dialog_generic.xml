@@ -68,8 +68,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="23dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
                 android:layout_marginEnd="23dp"
+                android:layout_marginBottom="23dp"
                 android:gravity="center"
                 android:text="@{textInfo}"
                 android:textColor="@color/black"
@@ -137,12 +137,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="24dp"
                 android:paddingHorizontal="20dp"
                 android:textColorHint="@color/black"
                 app:boxStrokeColor="@color/black"
                 app:endIconTint="@color/black"
                 app:hintTextAppearance="?attr/textAppearanceBody1"
                 app:hintTextColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@id/btn_dialog"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tilUser">
@@ -164,7 +166,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="22dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginBottom="24dp"
                 android:insetTop="0dp"
@@ -177,7 +178,6 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tilPassword"
                 tools:text="@string/text_button_send" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,6 @@
 package com.app.greenchallenge.viewpagermodule
 
-data class Board (
+data class Board(
     val image: Int,
     val title: String,
     val description: String
