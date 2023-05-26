@@ -7,6 +7,7 @@ import com.app.greenchallenge.databinding.ActivityMenuBinding
 import com.app.greenchallenge.menumodule.achievements.AchievementsActivity
 import com.app.greenchallenge.menumodule.commonchallenge.CommonChallengeActivity
 import com.app.greenchallenge.menumodule.dailychallenge.DailyChallengeActivity
+import com.app.greenchallenge.menumodule.news.NewsListActivity
 
 class MenuActivity : AppCompatActivity() {
 
@@ -26,6 +27,9 @@ class MenuActivity : AppCompatActivity() {
             }
             btnCommonChallenge.setOnClickListener {
                 startActivity(Intent(this@MenuActivity, CommonChallengeActivity::class.java))
+            }
+            btnNews.setOnClickListener {
+                startActivity(Intent(this@MenuActivity, NewsListActivity::class.java))
             }
         }
     }
