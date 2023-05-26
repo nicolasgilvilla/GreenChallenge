@@ -1,4 +1,4 @@
-package com.app.greenchallenge.viewpagermodule
+package com.domain
 
 data class Board (
     val image: Int,

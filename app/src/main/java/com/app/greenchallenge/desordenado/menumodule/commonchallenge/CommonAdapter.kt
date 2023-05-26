@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.app.greenchallenge.R
+import com.domain.ModelCommon
 
 class CommonAdapter(
     private val listCommon: List<ModelCommon>,
