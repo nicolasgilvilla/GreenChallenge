@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".menumodule.dailychallenge.DailyChallengeActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,8 +14,9 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/background_border"
         android:backgroundTint="@color/blue_light"
-        android:clickable="false"
+        android:gravity="center"
         android:text="@string/common_challenge"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/cardChallenge"
@@ -23,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/cardChallenge"
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -31,11 +32,13 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/background_border"
         android:backgroundTint="@color/green_light"
-        android:clickable="false"
+        android:gravity="center"
         android:padding="10dp"
         android:text="@string/common_challenge_text_title_example"
         android:textAllCaps="false"
+        android:textColor="@color/black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/containerInfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,11 +57,12 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/containerInternal"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="220dp"
             android:background="@drawable/bg_button_why"
             android:padding="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textEffects"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -67,24 +71,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_border"
-                android:clickable="false"
                 android:text="@string/text_why"
                 android:textAllCaps="false"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.appcompat.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/btnWhy"
-                android:layout_width="170dp"
+                android:layout_width="0dp"
                 android:layout_height="180dp"
                 android:background="@drawable/background_border"
-                android:clickable="false"
+                android:gravity="center"
                 android:text="@string/common_challenge_text_effect_example"
                 android:textAllCaps="false"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -104,30 +108,36 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textEffects"
-            android:layout_width="170dp"
+            android:layout_width="0dp"
             android:layout_height="160dp"
+            android:layout_marginStart="10dp"
             android:background="@drawable/background_border"
-            android:clickable="false"
+            android:gravity="center"
             android:text="@string/common_challenge_text_benefits_example"
             android:textAllCaps="false"
+            android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/btnBenefits"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/containerInternal"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnBenefits"
-            android:layout_width="170dp"
+            android:layout_width="0dp"
             android:layout_height="60dp"
+            android:layout_marginStart="10dp"
             android:background="@drawable/background_border"
             android:backgroundTint="@color/purple_light"
             android:clickable="false"
             android:text="@string/text_btn_benefits"
             android:textAllCaps="false"
             android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/containerInternal"
             app:layout_constraintTop_toBottomOf="@+id/textEffects" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -147,9 +157,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/containerInfo" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ic_flag"
+        app:layout_constraintBottom_toBottomOf="@id/textNumber"
+        app:layout_constraintEnd_toStartOf="@id/textNumber"
+        app:layout_constraintTop_toTopOf="@id/textNumber" />
+
     <TextView
         android:id="@+id/textNumber"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:gravity="center"
