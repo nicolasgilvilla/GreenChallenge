@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.databinding.ActivityMenuBinding
 import com.app.greenchallenge.menumodule.commonchallenge.CommonChallengeActivity
+import com.app.greenchallenge.menumodule.adapter.CustomAdapter
+import com.app.greenchallenge.desordenado.menumodule.commonchallenge.CommonChallengeActivity
 import com.app.greenchallenge.menumodule.dailychallenge.DailyChallengeActivity
 import com.app.greenchallenge.menumodule.graph.GraphActivity
 import com.app.greenchallenge.menumodule.news.NewsListActivity

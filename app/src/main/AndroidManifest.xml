@@ -48,7 +48,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name=".desordenado.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,7 +60,7 @@
             android:name=".menumodule.graph.GraphActivity"
             android:exported="false" />
         <activity
-            android:name=".menumodule.commonchallenge.CommonChallengeActivity"
+            android:name=".desordenado.menumodule.commonchallenge.CommonChallengeActivity"
             android:exported="false" />
         <activity
             android:name=".menumodule.dailychallenge.DailyChallengeActivity"

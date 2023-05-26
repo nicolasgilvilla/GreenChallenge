@@ -13,6 +13,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.databinding.DataBindingUtil
 import com.app.greenchallenge.R
 import com.app.greenchallenge.databinding.DialogGenericBinding
+import com.domain.DialogModel
 
 object ShowDialogGeneric {
 

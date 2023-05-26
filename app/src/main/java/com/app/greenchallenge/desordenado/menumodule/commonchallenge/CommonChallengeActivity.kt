@@ -1,12 +1,18 @@
-package com.app.greenchallenge.menumodule.commonchallenge
+package com.app.greenchallenge.desordenado.menumodule.commonchallenge
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.app.greenchallenge.R
+import com.app.greenchallenge.data.database.ChallengeLocalDataSourceImpl
 import com.app.greenchallenge.databinding.ActivityCommonChallengeBinding
+import com.app.greenchallenge.menumodule.commonchallenge.CommonAdapter
+import com.app.greenchallenge.menumodule.commonchallenge.CommonOnClickListener
+import com.app.greenchallenge.menumodule.commonchallenge.DetailActivity
+import com.data.repository.ChallengeRepository
+import com.domain.ModelCommon
+import com.usecases.GetChallengesUseCase
 
 class CommonChallengeActivity : AppCompatActivity(), CommonOnClickListener {
 
@@ -46,6 +52,9 @@ class CommonChallengeActivity : AppCompatActivity(), CommonOnClickListener {
                 benefits = getString(R.string.model11)
             ),
         )
+        val commonList: List<ModelCommon> =
+            GetChallengesUseCase(ChallengeRepository(ChallengeLocalDataSourceImpl())).invoke()
+
 
         setupAdapter(commonList)
 
