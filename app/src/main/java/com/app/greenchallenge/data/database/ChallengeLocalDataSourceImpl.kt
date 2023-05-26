@@ -18,5 +18,4 @@ class ChallengeLocalDataSourceImpl(
         //insertar los challenges
         return null
     }
-
 }

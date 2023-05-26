@@ -17,38 +17,38 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".desordenado.menumodule.news.NewsListActivity"
+            android:name=".ui.menumodule.news.NewsListActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".desordenado.treemodule.PaymentActivity"
+            android:name=".ui.menumodule.treemodule.PaymentActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".desordenado.treemodule.TreeActivity"
+            android:name=".ui.menumodule.treemodule.TreeActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".desordenado.menumodule.commonchallenge.DetailActivity"
+            android:name=".ui.menumodule.commonchallenge.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".desordenado.viewpagermodule.ViewPagerActivity"
+            android:name=".ui.viewpagermodule.ViewPagerActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".desordenado.SplashActivity"
+            android:name=".ui.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -57,25 +57,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".desordenado.menumodule.graph.GraphActivity"
+            android:name=".ui.menumodule.graph.GraphActivity"
             android:exported="false" />
         <activity
-            android:name=".desordenado.menumodule.commonchallenge.CommonChallengeActivity"
+            android:name=".ui.menumodule.commonchallenge.CommonChallengeActivity"
             android:exported="false" />
         <activity
-            android:name=".desordenado.menumodule.dailychallenge.DailyChallengeActivity"
+            android:name=".ui.menumodule.dailychallenge.DailyChallengeActivity"
             android:exported="false" />
         <activity
-            android:name=".desordenado.menumodule.profile.ProfileActivity"
+            android:name=".ui.menumodule.profile.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".desordenado.menumodule.MenuActivity"
+            android:name=".ui.menumodule.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".desordenado.landingmodule.LandingActivity"
+            android:name=".ui.landingmodule.LandingActivity"
             android:exported="false" />
         <activity
-            android:name=".desordenado.loginmodule.LoginActivity"
+            android:name=".ui.loginmodule.LoginActivity"
             android:exported="false" />
     </application>
 
