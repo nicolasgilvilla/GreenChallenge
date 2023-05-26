@@ -7,14 +7,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.greenchallenge.R
 import com.app.greenchallenge.data.database.ChallengeLocalDataSourceImpl
+import com.app.greenchallenge.data.database.FirestoreManager
 import com.app.greenchallenge.databinding.ActivityCommonChallengeBinding
+import com.data.datasource.FirestoreCallback
 import com.data.repository.ChallengeRepository
 import com.domain.ModelCommon
+import com.google.firebase.firestore.DocumentSnapshot
 import com.usecases.GetChallengesUseCase
 
 class CommonChallengeActivity : AppCompatActivity(), CommonOnClickListener {
 
     private lateinit var mBinding: ActivityCommonChallengeBinding
+    private var commonList = emptyList<ModelCommon>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,11 +28,40 @@ class CommonChallengeActivity : AppCompatActivity(), CommonOnClickListener {
         mBinding.layoutToolbar.goBackButton.setOnClickListener {
             onBackPressed()
         }
-        val commonList: List<ModelCommon> =
+
+        setUpFirebase()
+
+        commonList =
             GetChallengesUseCase(ChallengeRepository(ChallengeLocalDataSourceImpl())).invoke()
 
 
-        setupAdapter(commonList)
+    }
+
+    private fun setUpFirebase() {
+        val tempList = mutableListOf<ModelCommon>()
+        val firestoreManager = FirestoreManager()
+        for (i in 0 until 4) {
+            var id = i.toString()
+            if (i == 0) id = "testeo"
+            firestoreManager.getDocuments(object : FirestoreCallback {
+                override fun onSuccess(documents: DocumentSnapshot) {
+
+                    val title = documents.data?.getValue("title").toString()
+                    val action = documents.data?.getValue("action").toString()
+                    val effects = documents.data?.getValue("effects").toString()
+                    val benefits = documents.data?.getValue("benefits").toString()
+
+                    tempList.add(ModelCommon(title, action, effects, benefits))
+                    commonList = tempList
+                    setupAdapter(commonList)
+                }
+
+                override fun onFailure(exception: Exception) {
+                    commonList = listOf(ModelCommon("", "", "", ""))
+                }
+            }, id)
+
+        }
 
     }
 

@@ -15,7 +15,6 @@ class ChallengeLocalDataSourceImpl(
         (ModelCommon("", "", "", ""))//Obtener por Id y mapear al domain model
 
     override suspend fun save(challenges: List<ModelCommon>): Error? {
-        //insertar los challenges
         return null
     }
 
