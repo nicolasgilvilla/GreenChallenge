@@ -26,10 +26,12 @@ class CommonAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.title.text = listCommon[position].title
-        holder.info.text = listCommon[position].effects
-        holder.view.setOnClickListener { view ->
-            listener.onClick(view, position, listCommon)
+        if (!listCommon[position].title.isNullOrEmpty() ){
+            holder.title.text = listCommon[position].title
+            holder.info.text = listCommon[position].effects
+            holder.view.setOnClickListener { view ->
+                listener.onClick(view, position, listCommon)
+            }
         }
     }
 

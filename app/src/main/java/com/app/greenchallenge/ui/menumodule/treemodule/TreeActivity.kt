@@ -14,6 +14,12 @@ class TreeActivity : AppCompatActivity() {
         mBinding = ActivityTreeBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
+        mBinding.layoutToolbar.titleBar.text = "Dona y siembra"
+
+        mBinding.layoutToolbar.goBackButton.setOnClickListener{
+            onBackPressed()
+        }
+
         mBinding.donateButton.setOnClickListener {
             startActivity(Intent(this, PaymentActivity::class.java))
         }

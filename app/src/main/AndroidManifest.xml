@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="com.GreenChallenge"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -65,9 +66,7 @@
         <activity
             android:name=".ui.menumodule.dailychallenge.DailyChallengeActivity"
             android:exported="false" />
-        <activity
-            android:name=".ui.menumodule.profile.ProfileActivity"
-            android:exported="false" />
+        <
         <activity
             android:name=".ui.menumodule.MenuActivity"
             android:exported="false" />
