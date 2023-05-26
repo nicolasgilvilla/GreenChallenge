@@ -1,4 +1,4 @@
-package com.app.greenchallenge.menumodule.news
+package com.app.greenchallenge.desordenado.menumodule.news
 
 data class NewsModel(
     val img: String,

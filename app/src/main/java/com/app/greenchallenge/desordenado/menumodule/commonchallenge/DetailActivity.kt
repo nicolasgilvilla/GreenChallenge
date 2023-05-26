@@ -1,10 +1,10 @@
-package com.app.greenchallenge.menumodule.commonchallenge
+package com.app.greenchallenge.desordenado.menumodule.commonchallenge
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.R
-import com.app.greenchallenge.common.dialog.GenerateDialogGeneric
 import com.app.greenchallenge.databinding.ActivityDetailBinding
+import com.app.greenchallenge.desordenado.common.dialog.GenerateDialogGeneric
 
 class DetailActivity : AppCompatActivity() {
 

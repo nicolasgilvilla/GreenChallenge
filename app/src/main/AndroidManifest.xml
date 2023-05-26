@@ -17,31 +17,31 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".menumodule.news.NewsListActivity"
+            android:name=".desordenado.menumodule.news.NewsListActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".treemodule.PaymentActivity"
+            android:name=".desordenado.treemodule.PaymentActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".treemodule.TreeActivity"
+            android:name=".desordenado.treemodule.TreeActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".menumodule.commonchallenge.DetailActivity"
+            android:name=".desordenado.menumodule.commonchallenge.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".viewpagermodule.ViewPagerActivity"
+            android:name=".desordenado.viewpagermodule.ViewPagerActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -57,25 +57,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".menumodule.graph.GraphActivity"
+            android:name=".desordenado.menumodule.graph.GraphActivity"
             android:exported="false" />
         <activity
             android:name=".desordenado.menumodule.commonchallenge.CommonChallengeActivity"
             android:exported="false" />
         <activity
-            android:name=".menumodule.dailychallenge.DailyChallengeActivity"
+            android:name=".desordenado.menumodule.dailychallenge.DailyChallengeActivity"
             android:exported="false" />
         <activity
-            android:name=".menumodule.profile.ProfileActivity"
+            android:name=".desordenado.menumodule.profile.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".menumodule.MenuActivity"
+            android:name=".desordenado.menumodule.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".landingmodule.LandingActivity"
+            android:name=".desordenado.landingmodule.LandingActivity"
             android:exported="false" />
         <activity
-            android:name=".loginmodule.LoginActivity"
+            android:name=".desordenado.loginmodule.LoginActivity"
             android:exported="false" />
     </application>
 

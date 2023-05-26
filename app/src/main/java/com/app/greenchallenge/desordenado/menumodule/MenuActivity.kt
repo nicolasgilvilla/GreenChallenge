@@ -1,15 +1,13 @@
-package com.app.greenchallenge.menumodule
+package com.app.greenchallenge.desordenado.menumodule
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.databinding.ActivityMenuBinding
-import com.app.greenchallenge.menumodule.commonchallenge.CommonChallengeActivity
-import com.app.greenchallenge.menumodule.adapter.CustomAdapter
 import com.app.greenchallenge.desordenado.menumodule.commonchallenge.CommonChallengeActivity
-import com.app.greenchallenge.menumodule.dailychallenge.DailyChallengeActivity
-import com.app.greenchallenge.menumodule.graph.GraphActivity
-import com.app.greenchallenge.menumodule.news.NewsListActivity
+import com.app.greenchallenge.desordenado.menumodule.dailychallenge.DailyChallengeActivity
+import com.app.greenchallenge.desordenado.menumodule.graph.GraphActivity
+import com.app.greenchallenge.desordenado.menumodule.news.NewsListActivity
 
 class MenuActivity : AppCompatActivity() {
 

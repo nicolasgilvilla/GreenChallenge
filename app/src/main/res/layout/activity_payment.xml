@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="Detalles de la tarjeta"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
+        android:textStyle="bold" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="18dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="18dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -46,9 +46,9 @@
 
             <RadioGroup
                 android:id="@+id/radioGroup"
-                android:layout_marginStart="35dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -64,9 +64,9 @@
 
                     <RadioButton
                         android:id="@+id/radioButton2"
-                        android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="VISA" />
 
                 </LinearLayout>
@@ -82,28 +82,28 @@
         android:id="@+id/numerotarjeta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:hint="Número de tarjeta"
         android:inputType="number"
-        android:maxLines="1"
         android:maxLength="16"
-        android:layout_marginBottom="8dp" />
+        android:maxLines="1" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/fecha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
             android:layout_weight="1"
             android:hint="MM/AA"
             android:inputType="number"
-            android:maxLines="1"
             android:maxLength="5"
-            android:layout_marginEnd="8dp" />
+            android:maxLines="1" />
 
         <EditText
             android:id="@+id/ccv"
@@ -112,25 +112,25 @@
             android:layout_weight="1"
             android:hint="CVV"
             android:inputType="number"
-            android:maxLines="1"
-            android:maxLength="3" />
+            android:maxLength="3"
+            android:maxLines="1" />
 
     </LinearLayout>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:hint="Nombre en la tarjeta"
-        android:maxLines="1"
-        android:layout_marginBottom="8dp" />
+        android:maxLines="1" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:hint="Teléfono celular"
         android:inputType="phone"
-        android:maxLines="1"
-        android:layout_marginBottom="8dp" />
+        android:maxLines="1" />
 
     <Button
         android:id="@+id/btnPago"
@@ -146,6 +146,6 @@
         android:layout_gravity="center"
         android:indeterminate="true"
         android:visibility="invisible"
-        app:indicatorColor="@color/black"/>
+        app:indicatorColor="@color/black" />
 
 </LinearLayout>

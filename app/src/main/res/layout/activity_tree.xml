@@ -12,13 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:layout_margin="12dp"
+        android:src="@drawable/arboles"
         app:layout_constraintBottom_toTopOf="@+id/quoteTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription"
-        android:src="@drawable/arboles"
-        />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/quoteTextView"
