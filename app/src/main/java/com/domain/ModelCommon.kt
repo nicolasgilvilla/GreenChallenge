@@ -1,4 +1,4 @@
-package com.app.greenchallenge.menumodule.commonchallenge
+package com.domain
 
 data class ModelCommon(
     val title: String,

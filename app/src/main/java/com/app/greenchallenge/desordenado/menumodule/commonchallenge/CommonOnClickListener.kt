@@ -1,6 +1,7 @@
 package com.app.greenchallenge.menumodule.commonchallenge
 
 import android.view.View
+import com.domain.ModelCommon
 
 interface CommonOnClickListener {
 

@@ -2,6 +2,7 @@ package com.app.greenchallenge.common.dialog
 
 import android.content.Context
 import androidx.appcompat.app.AlertDialog
+import com.domain.DialogModel
 
 object GenerateDialogGeneric {
     private val alertsCollection = arrayListOf<AlertDialog>()
