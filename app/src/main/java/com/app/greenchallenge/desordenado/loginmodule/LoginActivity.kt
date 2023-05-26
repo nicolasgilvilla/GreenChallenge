@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.R
 import com.app.greenchallenge.common.dialog.GenerateDialogGeneric
 import com.app.greenchallenge.databinding.ActivityLoginBinding
-import com.app.greenchallenge.menumodule.MenuActivity
+import com.app.greenchallenge.desordenado.menumodule.MenuActivity
 
 class LoginActivity : AppCompatActivity() {
 

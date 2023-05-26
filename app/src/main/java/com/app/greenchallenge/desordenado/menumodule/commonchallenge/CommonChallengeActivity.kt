@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.app.greenchallenge.R
 import com.app.greenchallenge.data.database.ChallengeLocalDataSourceImpl
 import com.app.greenchallenge.databinding.ActivityCommonChallengeBinding
 import com.app.greenchallenge.menumodule.commonchallenge.CommonAdapter
@@ -26,7 +27,7 @@ class CommonChallengeActivity : AppCompatActivity(), CommonOnClickListener {
         mBinding.layoutToolbar.goBackButton.setOnClickListener {
             onBackPressed()
         }
-        val commonList: List<ModelCommon> = listOf(
+        val getCommonList: List<ModelCommon> = listOf(
             ModelCommon(
                 title = getString(R.string.common_challenge_text_title_example),
                 action = getString(R.string.common_challenge_text_action_example),

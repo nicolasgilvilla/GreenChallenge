@@ -69,7 +69,7 @@
             android:name=".menumodule.profile.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".menumodule.MenuActivity"
+            android:name=".desordenado.menumodule.MenuActivity"
             android:exported="false" />
         <activity
             android:name=".landingmodule.LandingActivity"
