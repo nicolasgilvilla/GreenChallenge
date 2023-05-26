@@ -1,12 +1,12 @@
-package com.app.greenchallenge.menumodule.dailychallenge
+package com.app.greenchallenge.desordenado.menumodule.dailychallenge
 
 import android.os.Bundle
 import android.view.View.INVISIBLE
 import android.view.View.VISIBLE
 import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.R
-import com.app.greenchallenge.common.dialog.GenerateDialogGeneric
 import com.app.greenchallenge.databinding.ActivityDailyChallengeBinding
+import com.app.greenchallenge.desordenado.common.dialog.GenerateDialogGeneric
 
 class DailyChallengeActivity : AppCompatActivity() {
 

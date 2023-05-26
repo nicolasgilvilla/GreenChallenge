@@ -1,12 +1,11 @@
-package com.app.greenchallenge.viewpagermodule
+package com.app.greenchallenge.desordenado.viewpagermodule
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.R
 import com.app.greenchallenge.databinding.ActivityViewPagerBinding
-import com.app.greenchallenge.desordenado.viewpagermodule.ViewPagerAdapter
-import com.app.greenchallenge.loginmodule.LoginActivity
+import com.app.greenchallenge.desordenado.loginmodule.LoginActivity
 import com.domain.Board
 import com.google.android.material.tabs.TabLayoutMediator
 

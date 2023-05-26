@@ -1,4 +1,4 @@
-package com.app.greenchallenge.common.dialog
+package com.app.greenchallenge.desordenado.common.dialog
 
 import android.content.Context
 import android.graphics.Color

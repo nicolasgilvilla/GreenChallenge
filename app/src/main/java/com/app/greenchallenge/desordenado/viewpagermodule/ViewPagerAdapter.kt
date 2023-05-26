@@ -5,7 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app.greenchallenge.databinding.BoardItemBinding
-import com.app.greenchallenge.viewpagermodule.ViewPagerOnClickListener
 import com.domain.Board
 
 class ViewPagerAdapter(

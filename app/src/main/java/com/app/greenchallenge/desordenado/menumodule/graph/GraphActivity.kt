@@ -1,4 +1,4 @@
-package com.app.greenchallenge.menumodule.graph
+package com.app.greenchallenge.desordenado.menumodule.graph
 
 import android.graphics.Color
 import android.os.Bundle
@@ -60,17 +60,18 @@ class GraphActivity : AppCompatActivity() {
     private fun setUpPieChar() {
 
         val entries = listOf(
-            PieEntry(26f, 26f),
-            PieEntry(23f, 23f),
-            PieEntry(12f, 12f),
-            PieEntry(35f, 35f),
-            PieEntry(10f, 10f)
+            PieEntry(26f, 26),
+            PieEntry(23f, 23),
+            PieEntry(12f, 12),
+            PieEntry(35f, 35),
+            PieEntry(10f, 10)
         )
         val dataSet = PieDataSet(entries, "Datos")
         val colors = listOf(
             Color.BLUE, Color.RED, Color.GREEN, Color.YELLOW, Color.MAGENTA
         )
         dataSet.colors = colors
+        dataSet.valueTextSize = 24f
 
 
         val labels = listOf("Marinos", "Sociales", "Naturales", "Reciclables", "Invernaderos")
@@ -119,6 +120,7 @@ class GraphActivity : AppCompatActivity() {
             Color.BLUE, Color.RED, Color.GREEN, Color.YELLOW, Color.MAGENTA
         )
         dataSet.colors = colors
+        dataSet.valueTextSize = 18f
 
         val barData = BarData(dataSet)
 
@@ -136,6 +138,7 @@ class GraphActivity : AppCompatActivity() {
             val legendEntry = LegendEntry().apply {
                 formColor = color
                 this.label = label
+                formSize = 12f
             }
             legendEntries.add(legendEntry)
         }

@@ -1,4 +1,4 @@
-package com.app.greenchallenge.landingmodule
+package com.app.greenchallenge.desordenado.landingmodule
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package com.app.greenchallenge.common.dialog
+package com.app.greenchallenge.desordenado.common.dialog
 
 import android.content.Context
 import androidx.appcompat.app.AlertDialog
@@ -17,10 +17,10 @@ object GenerateDialogGeneric {
         val dialog =
             ShowDialogGeneric.createDialog(context, dataDialog, positiveOnClick)
         dialog.show()
-        this.addAlert(dialog)
+        addAlert(dialog)
     }
 
     private fun addAlert(alert: AlertDialog) {
-        this.alertsCollection.add(alert)
+        alertsCollection.add(alert)
     }
 }
