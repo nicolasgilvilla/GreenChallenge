@@ -8,9 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.greenchallenge.R
 import com.app.greenchallenge.data.database.ChallengeLocalDataSourceImpl
 import com.app.greenchallenge.databinding.ActivityCommonChallengeBinding
-import com.app.greenchallenge.menumodule.commonchallenge.CommonAdapter
-import com.app.greenchallenge.menumodule.commonchallenge.CommonOnClickListener
-import com.app.greenchallenge.menumodule.commonchallenge.DetailActivity
 import com.data.repository.ChallengeRepository
 import com.domain.ModelCommon
 import com.usecases.GetChallengesUseCase
