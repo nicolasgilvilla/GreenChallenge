@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.airbnb.lottie.LottieAnimationView
 import com.app.greenchallenge.databinding.ActivitySplashBinding
-import com.app.greenchallenge.viewpagermodule.ViewPagerActivity
+import com.app.greenchallenge.desordenado.viewpagermodule.ViewPagerActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
