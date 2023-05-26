@@ -8,6 +8,7 @@ import com.app.greenchallenge.desordenado.menumodule.commonchallenge.CommonChall
 import com.app.greenchallenge.desordenado.menumodule.dailychallenge.DailyChallengeActivity
 import com.app.greenchallenge.desordenado.menumodule.graph.GraphActivity
 import com.app.greenchallenge.desordenado.menumodule.news.NewsListActivity
+import com.app.greenchallenge.desordenado.treemodule.TreeActivity
 
 class MenuActivity : AppCompatActivity() {
 
@@ -30,6 +31,9 @@ class MenuActivity : AppCompatActivity() {
             }
             btnNews.setOnClickListener {
                 startActivity(Intent(this@MenuActivity, NewsListActivity::class.java))
+            }
+            btnSiembra.setOnClickListener {
+                startActivity(Intent(this@MenuActivity, TreeActivity::class.java))
             }
         }
     }
