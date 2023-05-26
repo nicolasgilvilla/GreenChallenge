@@ -1,12 +1,13 @@
 package com.app.greenchallenge.menumodule.news
 
 object DataNews {
-    val newsUrls = arrayListOf(NewsModel(
-        "https://efeverde.com/wp-content/uploads/2023/05/Alfonso-Garcia-Mora-vicepresidente-de-la-Corporacion-Financiera-Internacional-IFC-que-desde-el-Grupo-Banco-Mundial-.jpg",
-        "Alfonso García Mora (Vicepresidente IFC del Banco Mundial): “No vamos a poder luchar la batalla por el clima utilizando sólo recursos públicos”",
-        "“No vamos a poder luchar la batalla por el clima utilizando sólo recursos públicos”, asegura Alfonso García Mora, vicepresidente de la Corporación Financiera Internacional (IFC), que desde el Grupo Banco Mundial insta al sector privado a participar del reverdecimiento de la economía para combatir la pobreza y la crisis climática.",
-        "https://efeverde.com/alfonso-garcia-mora-vicepresidente-ifc-banco-mundisl-no-vamos-a-poder-luchar-la-batalla-por-el-clima-utilizando-solo-recursos-publicos-innovate4climate/"
-    ),
+    val newsUrls = arrayListOf(
+        NewsModel(
+            "https://efeverde.com/wp-content/uploads/2023/05/Alfonso-Garcia-Mora-vicepresidente-de-la-Corporacion-Financiera-Internacional-IFC-que-desde-el-Grupo-Banco-Mundial-.jpg",
+            "Alfonso García Mora (Vicepresidente IFC del Banco Mundial): “No vamos a poder luchar la batalla por el clima utilizando sólo recursos públicos”",
+            "“No vamos a poder luchar la batalla por el clima utilizando sólo recursos públicos”, asegura Alfonso García Mora, vicepresidente de la Corporación Financiera Internacional (IFC), que desde el Grupo Banco Mundial insta al sector privado a participar del reverdecimiento de la economía para combatir la pobreza y la crisis climática.",
+            "https://efeverde.com/alfonso-garcia-mora-vicepresidente-ifc-banco-mundisl-no-vamos-a-poder-luchar-la-batalla-por-el-clima-utilizando-solo-recursos-publicos-innovate4climate/"
+        ),
         NewsModel(
             "https://www.ecoticias.com/wp-content/uploads/2023/05/20230523reservahidrica_tcm30-569719.jpg",
             "A pesar de la lluvia la reserva hídrica baja",

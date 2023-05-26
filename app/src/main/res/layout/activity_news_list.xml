@@ -6,18 +6,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/titleCommon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/background_border"
-            android:backgroundTint="@color/purple_light"
-            android:clickable="false"
-            android:text="@string/news"
-            android:textSize="20sp"
-            android:textStyle="bold"
+        <include
+            android:id="@+id/layout_toolbar"
+            layout="@layout/toolbar_basic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +21,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleCommon" />
+            app:layout_constraintTop_toBottomOf="@+id/layout_toolbar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

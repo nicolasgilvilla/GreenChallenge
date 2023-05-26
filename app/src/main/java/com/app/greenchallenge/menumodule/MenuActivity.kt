@@ -4,9 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.databinding.ActivityMenuBinding
-import com.app.greenchallenge.menumodule.achievements.AchievementsActivity
 import com.app.greenchallenge.menumodule.commonchallenge.CommonChallengeActivity
 import com.app.greenchallenge.menumodule.dailychallenge.DailyChallengeActivity
+import com.app.greenchallenge.menumodule.graph.GraphActivity
 import com.app.greenchallenge.menumodule.news.NewsListActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class MenuActivity : AppCompatActivity() {
         with(binding) {
 
             btnAchievements.setOnClickListener {
-                startActivity(Intent(this@MenuActivity, AchievementsActivity::class.java))
+                startActivity(Intent(this@MenuActivity, GraphActivity::class.java))
             }
             btnDailyChallenge.setOnClickListener {
                 startActivity(Intent(this@MenuActivity, DailyChallengeActivity::class.java))

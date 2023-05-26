@@ -16,6 +16,10 @@ class CommonChallengeActivity : AppCompatActivity(), CommonOnClickListener {
         super.onCreate(savedInstanceState)
         mBinding = ActivityCommonChallengeBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+        mBinding.layoutToolbar.titleBar.text = getString(R.string.common_challenge)
+        mBinding.layoutToolbar.goBackButton.setOnClickListener {
+            onBackPressed()
+        }
         val commonList: List<ModelCommon> = listOf(
             ModelCommon(
                 title = getString(R.string.common_challenge_text_title_example),

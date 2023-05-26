@@ -13,9 +13,16 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         mBinding = ActivityDetailBinding.inflate(layoutInflater)
 
         setContentView(mBinding.root)
+
+        mBinding.layoutToolbar.goBackButton.setOnClickListener {
+            onBackPressed()
+        }
+
+        mBinding.layoutToolbar.titleBar.text = getString(R.string.common_challenge)
 
         val intent = intent
         val intentExtras = intent.extras
@@ -23,7 +30,7 @@ class DetailActivity : AppCompatActivity() {
         if (intentExtras != null) {
             with(mBinding) {
                 val titleExtra = intentExtras["titleCommon"]
-                title.text = titleExtra.toString()
+                layoutToolbar.titleBar.text = titleExtra.toString()
                 val effectExtra = intentExtras["effect"]
                 btnWhy.text = effectExtra.toString()
                 val benefitExtra = intentExtras["benefit"]

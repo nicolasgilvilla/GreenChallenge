@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.app.greenchallenge.R
 import com.app.greenchallenge.databinding.ActivityNewsListBinding
 
 class NewsListActivity : AppCompatActivity(), OpenWebSite {
@@ -18,6 +19,8 @@ class NewsListActivity : AppCompatActivity(), OpenWebSite {
         binding = ActivityNewsListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.layoutToolbar.titleBar.text = getString(R.string.news)
+
         viewModel = ViewModelProvider(this)[NewsViewModel::class.java]
 
         mAdapter = NewsAdapter(this, viewModel.getNewsUrls())
@@ -25,6 +28,10 @@ class NewsListActivity : AppCompatActivity(), OpenWebSite {
             setHasFixedSize(false)
             layoutManager = LinearLayoutManager(context)
             adapter = mAdapter
+        }
+
+        binding.layoutToolbar.goBackButton.setOnClickListener {
+            onBackPressed()
         }
     }
 

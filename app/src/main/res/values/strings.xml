@@ -29,7 +29,7 @@
     <string name="text_btn_benefits">Oprime acá para conocerlos.</string>
     <string name="view_more"><i>Ver más</i></string>
     <string name="text_accepted_challenge">Cantidad de personas que se han unido a este reto:</string>
-    <string name="text_number_person">3523</string>
+    <string name="text_number_person">23</string>
     <string name="text_question">¿Aceptas el reto?</string>
     <string name="text_left">Abandonar reto.</string>
 
@@ -64,7 +64,7 @@
     <string name="common_challenge_text_effect_example">Además de la contaminación del aire, la tierra y el agua; la mala gestión de los residuos tiene efectos perjudiciales para la salud pública.</string>
     <string name="common_challenge_text_benefits_example">Reducción de desechos que contaminan el ambiente.\nConservación de los recursos naturales.</string>
     <string name="common_challenge_text_benefits_example_2">Ahorro de agua, energía y dinero.\nObtener nuevos productos a partir de otros ya usados.</string>
-    <string name="common_challenge_number_benefits_example">7523</string>
+    <string name="common_challenge_number_benefits_example">12</string>
     <string name="model1">Ni una gota más</string>
     <string name="model2">Ahorra agua y cierra los grifos</string>
     <string name="model3">Para 2030 estaremos sin agua si no se logra contener el daño que esta causando</string>
@@ -79,5 +79,7 @@
     <string name="model12">El transporte a base de gasolina es uno de los mayores emisores de CO2 en el planeta tierra</string>
     <string name="text_menu">Menú</string>
     <string name="title_app">GreenChallenge</string>
+    <string name="generales">Generales</string>
+    <string name="individuales">Individuales</string>
 
 </resources>

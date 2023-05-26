@@ -17,7 +17,12 @@ class DailyChallengeActivity : AppCompatActivity() {
         mBinding = ActivityDailyChallengeBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
+        mBinding.layoutToolbar.titleBar.text = getString(R.string.daily_challenge)
+
         with(mBinding) {
+            layoutToolbar.goBackButton.setOnClickListener {
+                onBackPressed()
+            }
             btnQuestion.setOnClickListener {
                 val number = textNumber.text.toString()
                 val total = number.toInt() + 1
