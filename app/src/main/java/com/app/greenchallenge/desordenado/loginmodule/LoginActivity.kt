@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.app.greenchallenge.R
-import com.app.greenchallenge.common.dialog.GenerateDialogGeneric
 import com.app.greenchallenge.databinding.ActivityLoginBinding
+import com.app.greenchallenge.desordenado.common.dialog.GenerateDialogGeneric
 import com.app.greenchallenge.desordenado.menumodule.MenuActivity
 
 class LoginActivity : AppCompatActivity() {
